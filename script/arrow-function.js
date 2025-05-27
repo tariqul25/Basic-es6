@@ -151,3 +151,35 @@ console.log(Object.values(person2));  ////its return return values array
 console.log(Object.entries(person2));
 
 
+
+
+
+// --------------------Loop through an object using for in, for of, object entries------------------------
+
+
+const person3={
+  name:'batashi',
+  age: 12,
+  country:'Bangladesh'
+}
+
+// below these 2 method how we can access object property value
+// console.log(person3.name)
+// console.log(person3['name'])
+
+
+// object directly forOf loop chole na forIn kora lage
+
+for (const key in person3) {
+//  console.log(key); its return person3 object keys
+console.log(`${person3[key]}`);//its return values of person3 but its must be stay in backtick(' ')
+console.log(` key: ${key} value: ${person3[key]}`); //its return person3 objects keys and value both
+}
+
+console.log(Object.entries(person3)); //eti ekti boro array te keys and valuse onujayi ekti array return kore
+
+// amra indirectly for of loop use korte parii. Ajonno every propety and value ke alada array te ante hobe Object.entried(objectName) use kore
+for (let [key,value] of Object.entries(person3)) {
+  // console.log(key); //we found every object keys and value diveided array for of loop. if we assign variable name only key
+console.log(` key: ${key} value: ${person3[key]}`); //its return person3 objects keys and value both but ekane dekte hobe forOf loop e variable ke [key,value] hisabe set kora hoyeche kina and let dewa hoyce kna
+}
