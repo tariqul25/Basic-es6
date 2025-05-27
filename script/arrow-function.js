@@ -1,4 +1,4 @@
-// ---------------------------------BASIC ARROW FUNCTION-------------------------------------------------
+// ------------------BASIC ARROW FUNCTION------------------
 
 // js system-1
 function sum(num1, num2) {
@@ -26,7 +26,7 @@ const sum2 = function (num1, num2) {
 console.log(sum2(30,50));
 
 
-// --------------
+
 // """""ES6 system-2""""""""": it's method use multiline value return. return keyword this mandatory in this system
 // In this system variable name also used as function name
 const sum4 = (num1, num2) => {
@@ -38,7 +38,7 @@ console.log(sum4(70, 80));
 
 
 
-// --------------------------------------MORE ARROW FUNCTION-------------------------------------------------------------------
+// --------------------MORE ARROW FUNCTION------------------------
 
 
 // ---------------------------------------
@@ -68,4 +68,29 @@ console.log(square(5));
 // 3 is : with use parenthesiss
 const sum7 = (num1, num2) => num1 + num2;
 console.log(sum6(5, 6));
+
+
+// -----------Spread operator, array max, copy arrays-------------------
+
+// """""""""""ES6 SPREAD OPERATOR""""""" used if we want only the array value from this array we can used 
+const friends= ['abul','kabul',"sabul",'babul']
+console.log(friends);     // return full array with syntax
+console.log(...friends);//its return only the valud used by spread operator(...arrayName)
+
+
+// we can create a new array with another arrays only which is accessed by Spread Operator and not take any inner array
+const newArray= ["hashem", ...friends]; 
+console.log(newArray);//its return a fully new array which hasn't any inner array
+
+// if we don't used Spread Operator to create an new array its create array but with an inner array
+const newArray1= ["hashem",friends]; 
+console.log(newArray1);//its return with an inner array
+
+
+// we can apply Math.Max() operator in an array when we used SPREAD OPERATOR either not
+const numbers=[10,14,67,56,456,980,234]
+console.log(Math.max(numbers))//its return NAN
+console.log(Math.max(...numbers));//yes,it return max value
+
+
 
