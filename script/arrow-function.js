@@ -126,3 +126,28 @@ const person1=['manna','bapparaj','don','misha']
 const [actinoBoy,sadBoy,gunda,gundaPro]=person1; //ekane array index onujayi variable er name dite nahoy ekta arektar jaygay store hoye jabe
 console.log(sadBoy)
 
+
+// --------------OBJECT Keys, values, entries, seal, freeze----------------------------------
+
+
+const person2={
+    name:'Special One',
+    age: 17,
+    college:'gurudayal'
+}
+console.log(person2)
+person2.village= 'haidhonkhali'; //its line add a property name and value in person
+console.log(person2); //its return person2 object with village property and value 
+
+Object.seal(person2); //ekn person2 te kuno value add kora jabe na but change kora jabe 
+
+Object.freeze(person2); //ekn person2 te kuno value change o kora jabe na and add o kara jabe na  
+
+//Below 2 lines return keys and values array dividedly
+// console.log(Object.keys(person2)); //its return return key/property name array
+console.log(Object.values(person2));  ////its return return values array
+
+// its return every property name and value in an array dividedly
+console.log(Object.entries(person2));
+
+
