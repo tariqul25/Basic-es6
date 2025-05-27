@@ -37,3 +37,35 @@ const sum4 = (num1, num2) => {
 console.log(sum4(70, 80));
 
 
+
+// --------------------------------------MORE ARROW FUNCTION-------------------------------------------------------------------
+
+
+// ---------------------------------------
+const sum5 = (num1, num2) => {
+  // console.log(arguments); //its give error
+  return num1 + num2;
+};
+console.log(sum6(20, 60));//eta error dibe because arrow function arguments array return kore na
+// -----------------------------------
+function sum6(num1, num2) {
+  console.log(arguments);
+  return num1 + num2;
+}
+console.log(sum5(5, 9));//eta error dibe na because arrow function arguments array return kore
+
+// """""There are 3 way to define ARROW function""""". these are----
+
+// 1 is: empty parenthesiss
+const test = () => console.log("hellow empty");
+// console.log(test())  : its return UNDEFINED cause ekane kuno argument dewa hocche na
+// test()        : evabe call korle shudu console log er string ke output dibe
+
+// 2 is : no parenthesiss
+const square = (a) => a * a;
+console.log(square(5));
+
+// 3 is : with use parenthesiss
+const sum7 = (num1, num2) => num1 + num2;
+console.log(sum6(5, 6));
+
