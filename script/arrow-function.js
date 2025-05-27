@@ -94,3 +94,35 @@ console.log(Math.max(...numbers));//yes,it return max value
 
 
 
+
+// --------------------Object and Array Destructuring----------------------------
+
+// destructuring used kora hoy tkn jkn  kuno array/object er moddhokar element ke ekta variable e store  korar dorkar hoy
+
+// const {peoperty value dite hobe}=person;
+// const [index onujay variable name dite hobe]=person1;
+
+// OBJECT DESTRUCTURE
+const person={
+  name:'tariqul',
+  age: 21,
+  department: "CST",
+  institute: "KPI"
+}
+// we can replace with 1 line used DESTRUCTURE method
+// const personName=person.name; 
+// const personAge=person.age; 
+
+//Below method called DESTRUCTURE METHOD,ekane object e property name dite hobe na hoy return korbe na undefined but property value dewar somoy serial maintain kora lage na 
+const {age,department,name}=person;
+console.log(department)
+
+
+// ARRAY DESTRUCTURE
+const person1=['manna','bapparaj','don','misha']
+// we can replace with 1 line used DESTRUCTURE method
+// const firstperson=person1[0]
+// const Secondperson=person1[1]
+const [actinoBoy,sadBoy,gunda,gundaPro]=person1; //ekane array index onujayi variable er name dite nahoy ekta arektar jaygay store hoye jabe
+console.log(sadBoy)
+
